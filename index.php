@@ -61,7 +61,7 @@ if (!defined('ENVIRONMENT')) {
 	$domain = strtolower($_SERVER['HTTP_HOST']);
 
 	switch ($domain) {
-		case 'frontend-pickupservice.sewadomain.my.id':
+		case 'frontend.sewadomain.my.id':
 			define('ENVIRONMENT', 'production');
 			break;
 		default:
