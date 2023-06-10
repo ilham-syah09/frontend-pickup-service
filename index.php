@@ -61,7 +61,7 @@ if (!defined('ENVIRONMENT')) {
 	$domain = strtolower($_SERVER['HTTP_HOST']);
 
 	switch ($domain) {
-		case 'frontend-pickupservice.phbcomputerc.my.id/':
+		case 'frontend-pickupservice.phbcomputerc.my.id':
 			define('ENVIRONMENT', 'production');
 			break;
 		default:
