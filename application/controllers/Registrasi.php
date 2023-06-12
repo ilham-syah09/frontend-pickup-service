@@ -20,7 +20,8 @@ class Registrasi extends CI_Controller
 		$form_params = [
 			'backend_key' => $this->config->item('backend_key'),
 			'username'    => $username,
-			'name'    => $name,
+			'name'        => $name,
+			'url'         => base_url('registrasi/aktifasi/')
 		];
 
 		$api_post = api_post($this->config->item('backend_user'), $this->config->item('backend_pass'), $form_params, $this->config->item('backend_host') . 'register', false);

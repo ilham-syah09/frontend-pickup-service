@@ -36,9 +36,17 @@
 												<a href="<?= base_url('paket/alamat/' . $data->id); ?>" class="btn btn-info">Lihat</a>
 											</td>
 											<td>Rp. <?= number_format($data->totalBiaya); ?></td>
-											<td><?= $data->status; ?></td>
 											<td>
-												<?php if ($data->status != 'Lunas') : ?>
+												<?php if ($data->status_code == 200) : ?>
+													<span class="badge badge-success text-dark">Success</span>
+												<?php elseif (($data->status_code == 201)) : ?>
+													<span class="badge badge-warning text-dark">Pending</span>
+												<?php else : ?>
+													<span class="badge badge-danger text-dark">Belum ada pembayaran</span>
+												<?php endif; ?>
+											</td>
+											<td>
+												<?php if ($data->status_code == null) : ?>
 													<div class="dropdown">
 														<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 															Action

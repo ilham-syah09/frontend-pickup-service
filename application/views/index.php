@@ -61,6 +61,7 @@
                             <li class="nav-item <?= ($this->uri->segment(1) == '' || $this->uri->segment(1) == 'home') ? 'active' : ''; ?>"><a href="<?= base_url('home'); ?>" class="nav-link">Dashboard</a></li>
                             <li class="nav-item <?= ($this->uri->segment(1) == 'paket') ? 'active' : ''; ?>"><a href="<?= base_url('paket'); ?>" class="nav-link">Paket</a></li>
                             <li class="nav-item <?= ($this->uri->segment(1) == 'pembayaran') ? 'active' : ''; ?>"><a href="<?= base_url('pembayaran'); ?>" class="nav-link">Pembayaran</a></li>
+                            <li class="nav-item <?= ($this->uri->segment(1) == 'progres') ? 'active' : ''; ?>"><a href="<?= base_url('progres'); ?>" class="nav-link">Progres</a></li>
                         </ul>
                     </div>
                 </div>
