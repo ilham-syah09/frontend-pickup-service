@@ -531,7 +531,7 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
-$config['backend_host'] = 'https://pickupservice.sewadomain.my.id/api/';
+$config['backend_host'] = 'https://teguhbusiness.my.id/api/';
 $config['backend_key'] = '247c8062ab84fad43';
 $config['backend_user'] = 'admin';
 $config['backend_pass'] = '12345678';
