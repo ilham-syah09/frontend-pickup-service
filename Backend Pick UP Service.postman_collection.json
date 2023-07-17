@@ -1,0 +1,813 @@
+{
+	"info": {
+		"_postman_id": "d8a2608e-a87d-4282-bc0c-9e3a35575fd6",
+		"name": "Backend Pick UP Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12963212"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "syah@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "user123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "bastian.nazaromi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Bastian Nazaromi",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/register",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aktifasi",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/register",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "Edit Profile",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/profile",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ekspedisi",
+			"item": [
+				{
+					"name": "Get Ekspedisi",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/ekspedisi",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"ekspedisi"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Paket",
+			"item": [
+				{
+					"name": "Get Paket",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/paket?idUser=2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"paket"
+							],
+							"query": [
+								{
+									"key": "idUser",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Paket",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idUser",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "namaPaket",
+									"value": "Modem Huawei",
+									"type": "text"
+								},
+								{
+									"key": "berat",
+									"value": "0.5",
+									"type": "text"
+								},
+								{
+									"key": "jarak",
+									"value": "120",
+									"type": "text"
+								},
+								{
+									"key": "idEkspedisi",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "lati",
+									"value": "-6.869795010810981",
+									"type": "text"
+								},
+								{
+									"key": "longi",
+									"value": "109.11972657469715",
+									"type": "text"
+								},
+								{
+									"key": "catatan",
+									"value": "Rita mall, depan kangkung bakar ya",
+									"type": "text"
+								},
+								{
+									"key": "totalBiaya",
+									"value": "12000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/paket",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"paket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Paket",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idUser",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "namaPaket",
+									"value": "Modem Huawei",
+									"type": "text"
+								},
+								{
+									"key": "berat",
+									"value": "0.5",
+									"type": "text"
+								},
+								{
+									"key": "jarak",
+									"value": "120",
+									"type": "text"
+								},
+								{
+									"key": "idEkspedisi",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "lati",
+									"value": "-6.869795010810981",
+									"type": "text"
+								},
+								{
+									"key": "longi",
+									"value": "109.11972657469715",
+									"type": "text"
+								},
+								{
+									"key": "catatan",
+									"value": "Rita mall, depan kangkung bakar ya",
+									"type": "text"
+								},
+								{
+									"key": "totalBiaya",
+									"value": "12000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/paket",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"paket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Paket",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "21",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/paket",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"paket"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Setting",
+			"item": [
+				{
+					"name": "Get Setting",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/setting",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"setting"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Progres",
+			"item": [
+				{
+					"name": "Get Progres",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/progres",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"progres"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "getDashboard",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/dashboard",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaksi",
+			"item": [
+				{
+					"name": "Post Transaksi",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idUser",
+									"value": "17",
+									"type": "text"
+								},
+								{
+									"key": "idPaket",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "order_id",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "payment_type",
+									"value": "bank_transfer",
+									"type": "text"
+								},
+								{
+									"key": "transaction_time",
+									"value": "2023-04-04 14:34:46",
+									"type": "text"
+								},
+								{
+									"key": "bank",
+									"value": "bni",
+									"type": "text"
+								},
+								{
+									"key": "pdf_url",
+									"value": "a",
+									"type": "text"
+								},
+								{
+									"key": "va_numbers",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "status_code",
+									"value": "201",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/transaksi",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"transaksi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Status Code",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{PASSWORD}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{USERNAME}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "backend_key",
+								"value": "{{KEYS}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/transaksi",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"transaksi"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost/backend-pickup-service/api",
+			"type": "string"
+		},
+		{
+			"key": "KEYS",
+			"value": "247c8062ab84fad43",
+			"type": "string"
+		},
+		{
+			"key": "USERNAME",
+			"value": "admin",
+			"type": "string"
+		},
+		{
+			"key": "PASSWORD",
+			"value": "12345678",
+			"type": "string"
+		}
+	]
+}
